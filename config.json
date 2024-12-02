@@ -1,0 +1,16 @@
+{
+    "website": {
+    "url": "https://example.com",
+    "selectors": {
+    "searchInput": "#search-box",
+    "searchButton": "#search-btn",
+    "resultList": ".job-list-item",
+    "nextPageButton": ".pagination-next",
+    "chatButton": "#chat-btn",
+    "backButton": "#back-btn"
+    }
+    },
+    "keywords": ["Software Engineer", "Frontend", "Backend"],
+    "userDataDir": "./user-data"
+}
+    
