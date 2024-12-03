@@ -1,16 +1,23 @@
 {
     "website": {
-    "url": "https://example.com",
-    "selectors": {
-    "searchInput": "#search-box",
-    "searchButton": "#search-btn",
-    "resultList": ".job-list-item",
-    "nextPageButton": ".pagination-next",
-    "chatButton": "#chat-btn",
-    "backButton": "#back-btn"
-    }
+        "url": "https://www.zhipin.com/web/geek/job?query={keyword}",
+        "selectors": {
+            "resultList": ".job-card-wrapper",
+            "nextPageButton": ".ui-icon-arrow-right",
+            "chatButton": ":scope .job-info .start-chat-btn",
+            "loginDialog": "div.boss-login-dialog",
+            "headerWrapper": "#header > div.inner.home-inner",
+            "loginButton": ".go-login-btn",
+            "userProfile": "#header > div.inner.home-inner > div.user-nav > ul > li.nav-figure",
+            "hrInfo": ":scope .job-info .info-public",
+            "greetDialog": "div.greet-boss-dialog",
+            "greetDialogCancelBtn": "div.greet-boss-dialog > div.greet-boss-container > div.greet-boss-footer > a.default-btn.cancel-btn",
+            "chatMessage": "div.chat-conversation > div.message-content > div.chat-record > div.chat-message > ul > li.item-myself"
+        }
     },
-    "keywords": ["Software Engineer", "Frontend", "Backend"],
-    "userDataDir": "./user-data"
+    "keywords": ["LLM"],
+    "userDataDir": "./user-data",
+    "interval": 10000,
+    "contactedJobsFile": "./contacted.json"
 }
     
