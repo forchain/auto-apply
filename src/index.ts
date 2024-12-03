@@ -1,8 +1,8 @@
-import { chromium, Browser, Page } from 'playwright';
+import { chromium, Browser, Page, BrowserContext } from 'playwright';
 import { Config, loadConfig } from './config';
 
 class AutoApply {
-    private browser: Browser | null = null;
+    private browser: BrowserContext | null = null;
     private page: Page | null = null;
     private config: Config;
 
@@ -17,7 +17,7 @@ class AutoApply {
                 headless: false,
             }
         );
-        this.page = await this.browser.newPage();
+        this.page = await this.browser!.newPage();
     }
 
     async start() {

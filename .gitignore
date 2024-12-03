@@ -1,0 +1,5 @@
+yarn.lock
+user-data/
+package-lock.json
+node_modules/
+dist/
